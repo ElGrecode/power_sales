@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>PowerSales</title>
+	<meta name="author" content="Marcy Carmichael" />
+	<meta name="description" content="Sales" />
+	<meta name="keywords"  content="power sales" />
+
+  <link href='https://fonts.googleapis.com/css?family=Ruda|Josefin+Slab:400,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="dist/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="dist/jquery.fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="dist/index.min.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="dist/jquery.fullPage.js"></script>
+	<!-- <script type="text/javascript" src="examples.js"></script> -->
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['splash', 'about', 'contact'],
+				// sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+				responsiveWidth: 900
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section" id="splash-wrapper">
+		<section class="content">
+			<h1>Power Sales</h1>
+			<p>This example will turn to normal scroll when the window size gets smaller than 900px width</p>
+      <button class="btn call-to-action">Contact Me</button>
+		</section>
+	</div>
+	<div class="section" id="about-wrapper">
+    <section class="content">
+			<h1>About</h1>
+			<p>This example will turn to normal scroll when the window size gets smaller than 900px width</p>
+		</section>
+	</div>
+	<div class="section" id="contact-wrapper">
+    <section class="content">
+			<h1>Contact</h1>
+			<p>This example will turn to normal scroll when the window size gets smaller than 900px width</p>
+		</section>
+	</div>
+</div>
+
+
+</body>
+</html>
